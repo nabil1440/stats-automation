@@ -1,0 +1,26 @@
+.form {
+  width: 100%;
+  max-height: 100vh;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.search-input {
+  width: 1330px;
+  height: 175px;
+  margin-top: 43px;
+  margin-right: 10px;
+  background-color: hsl(191, 15%, 85%);
+  border-radius: 15px;
+  font-size: larger;
+}
+.submit-btn {
+  width: 1340px;
+  height: 58px;
+  background: #465457;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: medium;
+  color: aliceblue;
+}
