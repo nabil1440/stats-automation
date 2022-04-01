@@ -1,0 +1,25 @@
+caption {
+    font-size: 24px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 90%;
+}
+
+th {
+    height: 60px;
+    background-color: #465457;
+    color: white;
+}
+
+td {
+    height: 40px;
+    background-color: #E7EEEF;
+}
