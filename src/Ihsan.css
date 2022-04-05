@@ -1,3 +1,42 @@
-.red {
-  color: red;
+.header{
+  background-color: #465457;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#text a{
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.row{
+  display: flex;
+  min-height: 180px;
+  background-color: white;
+}
+.box{
+  /* background-color: #DBE1E2; */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.text_M{
+  text-align: center;
+  color: white;
+  background-color: #465457;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.value{
+  background-color: #DBE1E2;
+  min-height: 100px;
+  display: flex;
 }
