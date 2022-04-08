@@ -1,17 +1,16 @@
-import React from "react";
+import React from 'react';
 
 // This is Rafid's part
-import "../Rafid.css";
+import '../Rafid.css';
 
 const Form = () => {
   return (
-    <div className="form">
+    <div className='form'>
       <form>
-        <input
-          type="text"
-          className="search-input"
-        />
-        <button type="submit" className="submit-btn">Calculate</button>
+        <textarea className='search-input'></textarea>
+        <button type='submit' className='submit-btn'>
+          Calculate
+        </button>
       </form>
     </div>
   );

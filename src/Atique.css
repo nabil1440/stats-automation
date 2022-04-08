@@ -1,25 +1,36 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
 caption {
-    font-size: 24px;
+  font-size: 24px;
+  background-color: #465457;
+  color: white;
+  padding: 1rem 0;
 }
 
 table,
 th,
 td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  border: 1px solid #c7c7c7;
+  border-collapse: collapse;
+  font-size: 1.25rem;
 }
 
 table {
-    width: 90%;
+  width: 100%;
 }
 
 th {
-    height: 60px;
-    background-color: #465457;
-    color: white;
+  height: 60px;
+  background-color: #465457;
+  color: white;
 }
 
 td {
-    height: 40px;
-    background-color: #E7EEEF;
+  height: 40px;
+  background-color: #e7eeef;
 }

@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <div>
+      <div id='wrapper'>
         <Routes>
           <Route path='/' element={<TablePage />} />
           <Route path='/results' element={<ResultsPage />} />

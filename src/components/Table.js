@@ -1,49 +1,54 @@
-import React from "react";
+import React from 'react';
 
 // This is Atique's part
-import "../Atique.css";
+import '../Atique.css';
 
 const Table = () => {
   return (
-    <div>
+    <div className='row'>
       <table>
         <caption>Frequency Distribution Table</caption>
-        <tr>
-          <th>Class</th>
-          <th>Frequency</th>
-          <th>Midpoint</th>
-          <th>Cumulative Frequency</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Frequency</th>
+            <th>Midpoint</th>
+            <th>Cumulative Frequency</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

@@ -5,32 +5,20 @@ import '../Ihsan.css';
 
 const MMMode = () => {
   return (
-  <div className='row'>
-    <div className='box'>
-      <div className='text_M'>
-        MEAN
+    <div className='row-m'>
+      <div className='box'>
+        <div className='text_M'>MEAN</div>
+        <div className='value'></div>
       </div>
-      <div className='value'>
-        
+      <div className='box'>
+        <div className='text_M'>MEDIAN</div>
+        <div className='value'></div>
       </div>
-    </div>
-    <div className='box'>
-      <div className='text_M'>
-        MEDIAN
-      </div>
-      <div className='value'>
-
+      <div className='box'>
+        <div className='text_M'>MODE</div>
+        <div className='value'></div>
       </div>
     </div>
-    <div className='box'>
-      <div className='text_M'>
-        MODE
-      </div>
-      <div className='value'>
-        
-      </div>
-    </div>
-  </div>
   );
 };
 

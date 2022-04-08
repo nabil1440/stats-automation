@@ -6,12 +6,10 @@ import '../Ihsan.css';
 const Header = () => {
   return (
     <div className='header'>
-      <div id="text">
-        <a href="#home">TABLE</a>
-        <a href="#home">CENTRAL TENDENCIES</a>
+      <div id='text'>
+        <Link to='/'>TABLE</Link>
+        <Link to='results/'>CENTRAL TENDENCIES</Link>
       </div>
-      {/* Link Example: 
-      <Link to='/results'>Results Page</Link> */}
     </div>
   );
 };

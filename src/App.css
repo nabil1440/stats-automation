@@ -1,0 +1,23 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.graph-row {
+  display: flex;
+}
+
+.graph-container {
+  min-height: 250px;
+  width: 100%;
+  background-color: #dbe1e2;
+}

@@ -1,33 +1,33 @@
-.header{
+.header {
   background-color: #465457;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
-
 }
 
-#text a{
-  margin-right: 10px;
+#text a {
+  margin-right: 1.25rem;
   color: white;
   text-decoration: none;
 }
 
-.row{
+.row-m {
   display: flex;
   min-height: 180px;
   background-color: white;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
-.box{
-  /* background-color: #DBE1E2; */
+.box {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 10px;
+  width: 32%;
 }
 
-.text_M{
+.text_M {
+  font-size: 2rem;
   text-align: center;
   color: white;
   background-color: #465457;
@@ -35,8 +35,8 @@
   padding-bottom: 20px;
 }
 
-.value{
-  background-color: #DBE1E2;
+.value {
+  background-color: #dbe1e2;
   min-height: 100px;
   display: flex;
 }
