@@ -56,9 +56,11 @@ const constructTable = arr => {
   return { interval, classes };
 };
 
-const arr = [
-  680, 669, 719, 699, 670, 710, 722, 663, 658, 634, 720, 690, 677, 669, 700,
-  718, 690, 681, 702, 696
-];
+// const arr = [
+//   680, 669, 719, 699, 670, 710, 722, 663, 658, 634, 720, 690, 677, 669, 700,
+//   718, 690, 681, 702, 696
+// ];
 
-console.log(constructTable(arr));
+// console.log(constructTable(arr));
+
+export { constructTable };

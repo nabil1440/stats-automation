@@ -6,17 +6,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TablePage from './components/TablePage';
 import ResultsPage from './components/ResultsPage';
 
-// Router
+// Context
+import { GlobalProvider } from './context/store';
 
 const App = () => {
   return (
     <Router>
       <Header />
       <div id='wrapper'>
-        <Routes>
-          <Route path='/' element={<TablePage />} />
-          <Route path='/results' element={<ResultsPage />} />
-        </Routes>
+        <GlobalProvider>
+          <Routes>
+            <Route path='/' element={<TablePage />} />
+            <Route path='/results' element={<ResultsPage />} />
+          </Routes>
+        </GlobalProvider>
       </div>
     </Router>
   );

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 // This is Atique's part
 import '../Atique.css';
 
+// Context
+import { GlobalContext } from '../context/store';
+
 const Table = () => {
+  const { tableData } = useContext(GlobalContext);
+
+  const { classes, interval } = tableData;
+
   return (
     <div className='row'>
       <table>
@@ -17,38 +24,22 @@ const Table = () => {
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
+        {classes ? (
+          <tbody>
+            {classes.map(range => (
+              <tr key={Math.random()}>
+                <td>
+                  {range.lower}-{range.upper}
+                </td>
+                <td>{range.freq}</td>
+                <td>{range.midPoint}</td>
+                <td>{range.cumFreq}</td>
+              </tr>
+            ))}
+          </tbody>
+        ) : (
+          <></>
+        )}
       </table>
     </div>
   );

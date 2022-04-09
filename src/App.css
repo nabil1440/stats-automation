@@ -21,3 +21,7 @@ body {
   width: 100%;
   background-color: #dbe1e2;
 }
+
+button {
+  font-family: 'Poppins', sans-serif;
+}

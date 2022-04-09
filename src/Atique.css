@@ -22,6 +22,7 @@ td {
 
 table {
   width: 100%;
+  text-align: center;
 }
 
 th {
@@ -33,4 +34,9 @@ th {
 td {
   height: 40px;
   background-color: #e7eeef;
+}
+
+.last-row td {
+  background-color: #465457 !important;
+  color: white;
 }
