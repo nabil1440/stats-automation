@@ -2,6 +2,8 @@ export const processData = tableData => {
   const check = Object.keys(tableData).length;
   if (!check) return null;
 
+  if (tableData.classes.length === 0) return null;
+
   const { classes, interval } = tableData;
 
   let labels = classes.map(range => range.midPoint);
@@ -29,6 +31,5 @@ export const processData = tableData => {
     datasets: [{ ...frequencies }]
   };
 
-  console.log(data);
   return data;
 };

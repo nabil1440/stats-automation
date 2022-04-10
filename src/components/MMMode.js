@@ -25,10 +25,6 @@ const MMMode = () => {
     setMode(calculateMode(tableData));
   }, [tableData]);
 
-  useEffect(() => {
-    console.log({ mean, median, mode });
-  }, [mean, median, mode]);
-
   return (
     <div className='row-m'>
       <div className='box'>

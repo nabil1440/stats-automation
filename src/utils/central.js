@@ -39,8 +39,6 @@ export const calculateMedian = tableData => {
     }
   }
 
-  console.log({ l, n, Fc, interval });
-
   Fc = medianIdx === 0 ? 0 : classes[medianIdx - 1].cumFreq;
 
   const frac = (n - Fc) / f;

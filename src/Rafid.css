@@ -13,7 +13,7 @@
   width: 100%;
   height: 175px;
   padding: 1rem;
-  background-color: hsl(191, 15%, 85%);
+  background-color: #d3dcde;
   border-radius: 15px;
   font-size: 1.5rem;
   border: none;
@@ -22,6 +22,8 @@
 }
 
 .search-input:focus {
+  background-color: #b7ccd1;
+  transition-duration: 300ms;
   outline: none;
 }
 
@@ -32,8 +34,22 @@
   border-radius: 8px;
   font-size: 1.25rem;
   color: white;
+  border: none;
 }
 
 .submit-btn:hover {
+  background-color: #313839;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.reset-button {
+  background-color: #d92222;
+  margin-top: 0.33rem;
+}
+
+.reset-button:hover {
+  background-color: #ad2525;
+  transition-duration: 500ms;
   cursor: pointer;
 }

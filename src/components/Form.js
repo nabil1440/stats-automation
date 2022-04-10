@@ -16,11 +16,18 @@ const Form = () => {
 
   useEffect(() => {
     if (formData) setText(formData);
-  }, []);
+  }, [formData]);
 
   useEffect(() => {
-    setFormData(text);
+    if (text) setFormData(text);
   }, [text]);
+
+  const clearState = () => {
+    setText('');
+    setNums(new Array(0));
+    setFormData('');
+    setTableData({});
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -46,6 +53,9 @@ const Form = () => {
         ></textarea>
         <button type='submit' className='submit-btn'>
           Calculate
+        </button>
+        <button className='submit-btn reset-button' onClick={clearState}>
+          Reset All
         </button>
       </form>
     </div>

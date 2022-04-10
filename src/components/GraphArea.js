@@ -16,7 +16,6 @@ const GraphArea = () => {
 
   useEffect(() => {
     if (tableData) setData(processData(tableData));
-    console.log(processData(tableData));
   }, [tableData]);
 
   const options = {

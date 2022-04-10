@@ -1,4 +1,5 @@
 const constructTable = arr => {
+  if (arr && isNaN(arr[0])) return null;
   // Find k
   const k = Math.ceil(Math.log2(arr.length));
 
