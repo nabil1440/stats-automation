@@ -42,6 +42,7 @@ const Form = () => {
           className='search-input'
           value={text}
           onChange={e => setText(e.target.value)}
+          placeholder='Enter some comma separated values. Example: 1, 2, 3, 4'
         ></textarea>
         <button type='submit' className='submit-btn'>
           Calculate
