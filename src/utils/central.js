@@ -1,4 +1,6 @@
 export const calculateMean = tableData => {
+  const check = Object.keys(tableData).length;
+  if (!check) return null;
   const { classes } = tableData;
 
   if (!classes.length) return null;
@@ -14,6 +16,8 @@ export const calculateMean = tableData => {
 };
 
 export const calculateMedian = tableData => {
+  const check = Object.keys(tableData).length;
+  if (!check) return null;
   const { classes, interval } = tableData;
 
   if (!classes.length) return null;
@@ -28,14 +32,16 @@ export const calculateMedian = tableData => {
   let medianIdx = -1;
 
   for (let i = 0; i < classes.length; i++) {
-    if (medPosition >= classes[i].lower && medPosition < classes[i].upper) {
+    if (medPosition <= classes[i].cumFreq) {
       l = classes[i].lower;
       f = classes[i].freq;
       medianIdx = i;
     }
   }
 
-  Fc = medianIdx === 0 ? 0 : (Fc = classes[medianIdx - 1].cumFreq);
+  console.log({ l, n, Fc, interval });
+
+  Fc = medianIdx === 0 ? 0 : classes[medianIdx - 1].cumFreq;
 
   const frac = (n - Fc) / f;
   const median = l + frac * interval;
@@ -44,6 +50,8 @@ export const calculateMedian = tableData => {
 };
 
 export const calculateMode = tableData => {
+  const check = Object.keys(tableData).length;
+  if (!check) return null;
   const { classes, interval } = tableData;
 
   if (!classes.length) return null;
