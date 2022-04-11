@@ -27,7 +27,7 @@ const constructTable = arr => {
   let low = min,
     high = min + interval;
 
-  for (let i = min; i < max; i += interval) {
+  for (let i = 0; i <= k; i++) {
     classes.push({ lower: low, upper: high, freq: 0 });
     low = high;
     high += interval;
